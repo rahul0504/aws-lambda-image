@@ -1,39 +1,35 @@
 {
-  "bucket": "your-destination-bucket",
-  "reduce": {
-      "directory": "./reduced",
-      "prefix": "reduced-",
-      "quality": 90,
-      "acl": "public-read"
-  },
+  "bucket": "mystore.in",
   "resizes": [
     {
-      "size": 300,
-      "directory": "./resized/small",
-      "prefix": "resized-"
-    },
-    {
-      "size": 450,
-      "directory": "./resized/medium",
-      "suffix": "_medium"
-    },
-    {
-      "size": "600x600^",
+      "size": "50",
       "gravity": "Center",
-      "crop": "600x600",
-      "directory": "./resized/cropped-to-square",
+      "crop": "50x50",
       "orientation": true
     },
     {
-      "size": 600,
-      "directory": "./resized/600-jpeg",
-      "format": "jpg",
-      "background": "white"
+      "size": "100",
+      "gravity": "Center",
+      "crop": "100x100",
+      "orientation": true
     },
     {
-      "size": 900,
-      "directory": "./resized/large",
-      "quality": 90
+      "size": "120"
+    },
+    {
+      "size": "240"
+    },
+    {
+      "size": "480"
+    },
+    {
+      "size": "640"
+    },
+    {
+      "size": "1024"
+    },
+    {
+      "size": "2048"
     }
   ]
 }
