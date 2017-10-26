@@ -16,7 +16,7 @@ const path           = require("path");
 
 // Lambda Handler
 exports.handler = (event, context, callback) => {
-
+console.log("----------2--------")
     var eventRecord = eventParser(event);
     if (eventRecord) {
         process(eventRecord, callback);
